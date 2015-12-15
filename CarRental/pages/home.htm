@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    
+    <h4>Search Car</h4>
+        <form name="searchForm" ng-submit="submit()">
+        <div class="form-group">
+        <label>Destination : </label>
+        <input type="text" name="destination" ng-model="destination" class="form-control" required/>
+        <div role="alert">
+           <span class="error" ng-show="searchForm.destination.$error.required">
+            Required!</span>
+        </div>
+        <label>Pickup Date :</label>
+        <input type="date" ng-model="pickupDate" class="form-control"/>  
+        <label>Pickup Time :</label>
+        <input type="time" ng-model="pickupTime" class="form-control"/>  
+        <label>DropOff Date :</label>
+        <input type="date" ng-model="dropOffDate" class="form-control"/> 
+        <label>DropOff Time :</label>
+        <input type="time" ng-model="dropOffTime" placeholder="HH:mm" class="form-control"/>  
+            
+        </div>
+            <input type="submit" class="btn btn-primary" value="Search"/>
+        </form>
+    </div>
+
+</div>
+

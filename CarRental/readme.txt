@@ -1,0 +1,1 @@
+I tested it using brackets code editor . Please launch index.htm to launch the app .

@@ -1,0 +1,16 @@
+ <a href="#">Back to Search</a>
+
+<hr/>
+Search Result For {{destination}}
+<hr/>
+</br>
+<table border="1">
+  <tbody >
+   <tr><th>Car Code</th><th>Price ( Per Day )</th><th>Total Price(Including Tax.)</th><th>More Details</th></tr>
+    <tr ng-repeat="w in weatherResult.Result">
+       <td>{{w.CarTypeCode}}</td>
+       <td>{{w.DailyRate}} {{w.CurrencyCode}}</td>
+       <td>{{w.TotalPrice}} {{w.CurrencyCode}}</td>
+       <td><a href="{{w.DeepLink}}">Book Now</a></td>
+  </tbody>
+</table>
